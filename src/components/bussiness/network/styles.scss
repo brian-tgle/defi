@@ -1,0 +1,39 @@
+@import 'styles/colors';
+.networks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  .card {
+    border-radius: 0.5rem;
+    border: 1px solid $border;
+    box-shadow: $box-shadow;
+    padding: 1rem;
+    margin: 0.5rem;
+    &__header {
+      margin-top: 0;
+      padding-bottom: 1rem;
+      text-align: center;
+      text-transform: uppercase;
+      border-bottom: 1px solid $border;
+    }
+    &__info {
+      margin: 0.5rem 0;
+      display: flex;
+      justify-content: space-between;
+      &--value {
+        font-weight: bold;
+      }
+    }
+    &__custom-amount {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__footer {
+      border-top: 1px solid $border;
+      text-align: center;
+      padding-top: 1rem;
+      margin-bottom: 0;
+    }
+  }
+}
