@@ -1,0 +1,48 @@
+@import 'styles/colors';
+
+.button {
+  cursor: pointer;
+  color: $white;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  border: 1px solid;
+  &:hover {
+    box-shadow: $box-shadow;
+  }
+  &.primary {
+    background-color: $primary;
+    border-color: $primary;
+  }
+  &.primary-outline {
+    color: $primary;
+    border-color: $primary;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  &.secondary {
+    background-color: $secondary;
+    border-color: $secondary; 
+  }
+  &.secondary-outline {
+    color: $secondary;
+    border-color: $secondary; 
+  }
+}
+
+.button__group {
+  display: flex;
+  margin-bottom: 1rem;
+  .button {
+    width: 100%;
+    border-radius: 0;
+    &:first-child {
+      border-top-left-radius: 0.25rem;
+      border-bottom-left-radius: 0.25rem;
+    }
+    &:last-child {
+      border-top-right-radius: 0.25rem;
+      border-bottom-right-radius: 0.25rem;
+    }
+  }
+}
