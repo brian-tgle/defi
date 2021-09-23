@@ -14,4 +14,11 @@ body {
   justify-content: space-between;
   background-color: $primary;
   color: $white;
+  padding: 0 1rem;
+}
+
+.input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid $border;
 }
